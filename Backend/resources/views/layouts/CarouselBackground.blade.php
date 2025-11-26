@@ -1,38 +1,55 @@
-<div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
+<div class="carousel w-full h-screen relative group" id="autoCarousel">
+  <!-- Slide 1 -->
+  <div id="slide1" class="carousel-item relative w-full h-full transition-all duration-700">
+    <img src="{{ asset('assets/image.png') }}" class="w-full h-full object-cover brightness-50" />
+    <a href="#slide4" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
+    <a href="#slide2" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a>
   </div>
-  <div id="slide2" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
+
+  <!-- Slide 2 -->
+  <div id="slide2" class="carousel-item relative w-full h-full transition-all duration-700">
+    <img src="{{ asset('assets/image3.jpg') }}" class="w-full h-full object-cover brightness-50" />
+    <a href="#slide1" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
+    <a href="#slide3" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a>
   </div>
-  <div id="slide3" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
+
+  <!-- Slide 3 -->
+  <div id="slide3" class="carousel-item relative w-full h-full transition-all duration-700">
+    <img src="{{ asset('assets/image222.jpg') }}" class="w-full h-full object-cover brightness-50" />
+    <a href="#slide2" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
+    <a href="#slide4" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a>
   </div>
-  <div id="slide4" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" class="btn btn-circle">❮</a>
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
+
+  <!-- Slide 4 -->
+  <div id="slide4" class="carousel-item relative w-full h-full transition-all duration-700">
+    <img src="{{ asset('assets/image4.jpg') }}" class="w-full h-full object-cover brightness-50" />
+    <a href="#slide3" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
+    <a href="#slide1" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a>
   </div>
 </div>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 4;
+  const carousel = document.getElementById('autoCarousel');
+  const intervalTime = 3000; 
+  let slideInterval;
+
+  function startAutoPlay() {
+    slideInterval = setInterval(() => {
+      currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+      location.hash = '#slide' + currentSlide;
+    }, intervalTime);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(slideInterval);
+  }
+
+  
+  startAutoPlay();
+
+   
+  carousel.addEventListener('mouseenter', stopAutoPlay);
+  carousel.addEventListener('mouseleave', startAutoPlay);
+</script>

@@ -1,49 +1,18 @@
 <x-app-layout>
-    <div>
-        <div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide2" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide4" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" class="btn btn-circle">❮</a>
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
+    <div class="relative">
+    
+    @include('layouts.CarouselBackground')
+
+    <div class="absolute inset-0 flex items-center justify-center">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class=" dark:bg-gray-800 overflow-hidden">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("This is Home Page") }}
-                </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg text-white text-center">
+                {{ __("This is Home Page") }} <br>
+                {{ __("This is Home Page") }} <br>
+                {{ __("This is Home Page") }} <br>
+                {{ __("This is Home Page") }} <br>
             </div>
         </div>
     </div>
+
+</div>
 </x-app-layout>
