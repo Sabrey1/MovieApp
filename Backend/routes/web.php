@@ -15,6 +15,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    // This is Home
+    Route::get('/home', function () {
+        return view('Home.HomePage');
+    })->name('home');
+
+    // This is Home
+    Route::get('/about', function () {
+        return view('About.About');
+    })->name('about');
 });
 
 require __DIR__.'/auth.php';
