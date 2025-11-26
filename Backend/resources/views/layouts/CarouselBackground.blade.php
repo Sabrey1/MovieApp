@@ -2,29 +2,25 @@
   <!-- Slide 1 -->
   <div id="slide1" class="carousel-item relative w-full h-full transition-all duration-700">
     <img src="{{ asset('assets/image.png') }}" class="w-full h-full object-cover brightness-50" />
-    {{-- <a href="#slide4" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
-    <a href="#slide2" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a> --}}
+    
   </div>
 
   <!-- Slide 2 -->
   <div id="slide2" class="carousel-item relative w-full h-full transition-all duration-700">
     <img src="{{ asset('assets/image3.jpg') }}" class="w-full h-full object-cover brightness-50" />
-    {{-- <a href="#slide1" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
-    <a href="#slide3" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a> --}}
+   
   </div>
 
   <!-- Slide 3 -->
   <div id="slide3" class="carousel-item relative w-full h-full transition-all duration-700">
     <img src="{{ asset('assets/image222.jpg') }}" class="w-full h-full object-cover brightness-50" />
-    {{-- <a href="#slide2" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
-    <a href="#slide4" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a> --}}
+   
   </div>
 
   <!-- Slide 4 -->
   <div id="slide4" class="carousel-item relative w-full h-full transition-all duration-700">
     <img src="{{ asset('assets/image4.jpg') }}" class="w-full h-full object-cover brightness-50" />
-    {{-- <a href="#slide3" class="btn btn-circle absolute left-5 top-1/2 z-10">❮</a>
-    <a href="#slide1" class="btn btn-circle absolute right-5 top-1/2 z-10">❯</a> --}}
+    
   </div>
 </div>
 

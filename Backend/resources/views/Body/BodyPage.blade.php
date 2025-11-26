@@ -1,4 +1,4 @@
-<div class="p-5">
+<div>
     <label class="relative block w-full max-w-sm">
   <!-- Icon -->
   <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
@@ -22,5 +22,24 @@
     <button class="btn bg-gray-500 rounded-full p-4 text-white">Drama</button>
     <button class="btn bg-gray-500 rounded-full p-4 text-white">Adventure</button>
     <button class="btn bg-gray-500 rounded-full p-4 text-white">Romance</button>
+</div>
+<div>
+  <h1>Popular Movies</h1>
+  
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="{{asset('assets/image5.png')}}"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">The Dark Knight</h2>
+      <p>2008</p>
+      <div style="display: flex; gap: 10px">
+        <p class="bg-gray-500 rounded-full text-center w-[50px] text-white">Action</p>
+        <p class="bg-gray-500 rounded-full text-center">Crime</p>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
