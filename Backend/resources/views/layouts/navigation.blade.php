@@ -18,8 +18,8 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('moive')" :active="request()->routeIs('moive')">
-                        {{ __('Moive') }}
+                    <x-nav-link :href="route('movie')" :active="request()->routeIs('movie')">
+                        {{ __('Movie') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">

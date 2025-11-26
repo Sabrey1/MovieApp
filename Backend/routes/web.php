@@ -26,12 +26,12 @@ Route::middleware('auth')->group(function () {
         return view('About.About');
     })->name('about');
 
-    Route::get('/moive', function () {
-        return view('Moive.Moive');
-    })->name('moive');
+    Route::get('/movie', function () {
+        return view('Movie.Movie');
+    })->name('movie');
 
     Route::get('/generes', function () {
-        return view('Generes.Generes');
+        return view('Genres.Genres');
     })->name('generes');
 });
 
