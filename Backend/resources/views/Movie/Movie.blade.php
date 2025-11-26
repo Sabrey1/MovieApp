@@ -1,10 +1,10 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-20">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class=" dark:bg-gray-800 overflow-hidden">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <h1>{{ __("Browse Movies") }}</h1>
-                    <p>Discover your next favorite film from our collection</p>
+                    <h1 class="text-4xl font-bold mt-3">{{ __("Browse Movies") }}</h1>
+                    <p class="mb-3">Discover your next favorite film from our collection</p>
                     <div>
                         <label class="relative block w-full max-w-sm">
                     <!-- Icon -->
@@ -21,7 +21,7 @@
                     />
                     </label>
 
-                    <div class="mt-5">
+                    <div class="mt-5 mb-2">
                         <button class="btn bg-gray-500 rounded-full p-4 text-white">All</button>
                         <button class="btn bg-gray-500 rounded-full p-4 text-white">Action</button>
                         <button class="btn bg-gray-500 rounded-full p-4 text-white">Sci-Fi</button>
