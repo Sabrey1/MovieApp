@@ -25,6 +25,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/about', function () {
         return view('About.About');
     })->name('about');
+
+    Route::get('/moive', function () {
+        return view('Moive.Moive');
+    })->name('moive');
+
+    Route::get('/generes', function () {
+        return view('Generes.Generes');
+    })->name('generes');
 });
 
 require __DIR__.'/auth.php';
